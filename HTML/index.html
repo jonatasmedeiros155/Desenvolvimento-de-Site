@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pacífico Paradise</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Pacífico Paradise</h1>
+    <p>Bem-vindo ao Pacífico Paradise! Um lugar paradisíaco para relaxar e desfrutar da natureza.</p>
+  </header>
+
+  <section id="attractions">
+    <h2>Atrações do Pacífico Paradise</h2>
+    <div class="attraction">
+      <img src="sala de jogos.jpg" width="20%" alt="Atração 1">
+      <h3>Atração 1</h3>
+      <p>Atração 1, Sala de jogos.</p>
+      <a href="#">Mais Informações</a>
+    </div>
+    <div class="attraction">
+      <img src="images.jfif" width="20%" alt="Atração 2">
+      <h3>Atração 2</h3>
+      <p>Atração 2, Roda Gigante.</p>
+      <a href="#">Mais Informações</a>
+    </div>
+    <!-- Mais seções de atrações podem ser adicionadas aqui -->
+  </section>
+
+  <section id="gallery">
+    <h2>Galeria de Imagens</h2>
+    <div class="image-gallery">
+      <img src="download (1).jfif" alt="Imagem 1" onclick="expandImage(this)">
+      <img src="download (2).jfif" alt="Imagem 2" onclick="expandImage(this)">
+      <img src="download (3).jfif" alt="Imagem 3" onclick="expandImage(this)">
+      <img src="download (4).jfif" alt="Imagem 4" onclick="expandImage(this)">
+      <img src="download (5).jfif" alt="Imagem 5" onclick="expandImage(this)">
+      <img src="download (6).jfif" alt="Imagem 6" onclick="expandImage(this)">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Formulário de Contato</h2>
+    <form>
+      <label for="name">Nome:</label>
+      <input type="text" id="name" name="name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+
+      <label for="message">Mensagem:</label>
+      <textarea id="message" name="message"></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+<script>
+    function expandImage(image) {
+            const imageContainer = image.parentElement;
+            if (imageContainer.classList.contains("expanded")) {
+                image.style.transform = "scale(1)";
+                imageContainer.classList.remove("expanded");
+            } else {
+                image.style.transform = "scale(2)";
+                imageContainer.classList.add("expanded");
+            }
+        }
+</script>
+</body>
+</html>
